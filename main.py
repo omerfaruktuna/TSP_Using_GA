@@ -189,7 +189,7 @@ print('\nEnter file name:')
 #print('For example: djibouti.txt')
 file_name = input()
 
-pop_sizee = 100
+pop_sizee = 200
 
 starting_city_index = print('\nEnter starting city:')
 starting_city_index = int(input())
@@ -204,7 +204,7 @@ population = x.generate_initial_population()
 result_distances = []
 result_population = []
 
-for i in range(100):
+for i in range(500):
     distances = x.eval_function(x.popultn)
 
     print(min(distances))
@@ -225,4 +225,3 @@ plt.title('Length of the shortest path for {} , Population Size = 100'.format(x.
 plt.xlabel('Number of generations')
 plt.show()
 #plt.savefig('Djibouti.png')
-
